@@ -1,3 +1,4 @@
+% This is code by Jack Baker, Lynne Burks and Mahalia Miller
 function h = myfigure(xsize, ysize, varargin)
 % function h = myfigure(xsize, ysize, varargin)
 % myfigures creates a figure with width xsize (in inches) and height ysize
@@ -5,7 +6,7 @@ function h = myfigure(xsize, ysize, varargin)
 %
 % varargin can be anything that would normally be input to figure command
 %
-% Lynne Burks
+% based on code from Lynne Burks
 % Stanford University
 % September 19, 2013
 
