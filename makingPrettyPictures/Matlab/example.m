@@ -1,3 +1,4 @@
+% This is code by Mahalia Miller
 % this script gives an example usage of the figure formatting options
 
 clear; clc; close all
