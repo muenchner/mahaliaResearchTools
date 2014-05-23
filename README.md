@@ -7,7 +7,7 @@ This work has been done primarily by me in the Baker Research Group at Stanford 
 
 Here's the summary:
 
-1. Finding references: Chrome, Zotero, Bibtex
+1. Finding references: Chrome, Zotero, Bibtex (+links to other good options)
 
 2. Getting your ideas down: Latex, Beamer, Powerpoint
 
