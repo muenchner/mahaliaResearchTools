@@ -1,3 +1,4 @@
+% This is code by Lynne Burks and Mahalia Miller
 function subplot_labels(fontsize, xtext, ytext, varargin)
 % function subplot_labels(hfig, xtext, ytext)
 % adds labels like (a), (b), (c), ... (z) on subplots of current figure
@@ -10,7 +11,7 @@ function subplot_labels(fontsize, xtext, ytext, varargin)
 % varargin = other inputs to the 'text' function, in the same format as
 %            required by 'text', ex) 'fontsize', 14
 %
-% Lynne Burks
+% based on code by Lynne Burks
 % Stanford University
 % September 19, 2013
 
