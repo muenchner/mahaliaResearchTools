@@ -1,4 +1,4 @@
-
+% This is code by Mahalia Miller
 %make x and y data
 x = linspace(-20, 20, 500); %500 linearly-spaced points between -20 and 20
 a = 2;
