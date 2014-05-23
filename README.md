@@ -10,18 +10,22 @@ Here's the summary:
 -Chrome
 -Zotero
 -Bibtex
+
 2. Getting your ideas down
 -Latex
 -Beamer
 -Powerpoint
+
 3. Making pretty pictures
 -Matlab functions
 -ArcGIS
 -Illustrator
 -Python’s Matplotlib
+
 4. Researching natural disasters with finesse
 -Choosing a subset of earthquake scenarios with optimization
 -Modeling networks quickly
+
 5. Synchronizing your data
 -Dropbox, Box
 -Github
