@@ -1,3 +1,4 @@
+% This is code by Jack Baker, Lynne Burks and Mahalia Miller
 function format_axes(axis_size, label_size, my_font, hx, hy)
 % function format_axes(axis_size, label_size)
 % formats fontsize of all current axis elements
