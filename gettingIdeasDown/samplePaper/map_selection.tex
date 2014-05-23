@@ -1,0 +1,90 @@
+% eqedoc.tex V2.0, 27 March 2010
+
+\documentclass[times]{eqeauth}
+
+\usepackage{amsmath}
+\usepackage{moreverb}
+\usepackage{subfigure}
+\usepackage{bbm}
+%\usepackage{epsfig}
+\usepackage[comma,square,sort&compress,numbers]{natbib}
+\renewcommand{\bibnumfmt}[1]{{#1}.}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./FIGS/}
+\usepackage{setspace}
+\usepackage{color}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.85}
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\diagpars}{(}{)}
+\newcommand{\diag}{\operatorname{diag}\diagpars}
+\newcommand{\norm}[1]{\displaystyle \left\| #1 \right\|}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+
+\usepackage[dvips,colorlinks,bookmarksopen,bookmarksnumbered,citecolor=red,urlcolor=red]{hyperref}
+
+\newcommand\BibTeX{{\rmfamily B\kern-.05em \textsc{i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\def\volumeyear{2013}
+
+\begin{document}
+
+\runningheads{M.~Miller and J.~Baker}{Ground-motion intensity and damage map selection using optimization}
+
+\title{Ground-motion intensity and damage map selection for probabilistic infrastructure network risk assessment using optimization}
+
+\author{M.~Miller\corrauth and J.~Baker}
+
+\address{Department of Civil and Environmental Engineering, Stanford University, Stanford, CA 94305-4020, U.S.A.}
+
+\corraddr{Mahalia Miller, Department of Civil and Environmental Engineering, Stanford University,
+Stanford, CA 94305-4020, U.S.A. E-mail: mahalia@alumni.stanford.edu}
+
+%\cgs{<Contract/grant sponsor name (no number)>}
+%\cgsn{<Contract/grant sponsor name>}{<number>}
+
+\begin{abstract}
+In many parts of the world, earthquakes threaten regional infrastructure systems. For modeling risk using stochastic earthquake catalogs, random variables include rupture location and the damage state of different components. Thus, there is an infinite set of possible damage maps that a risk modeler could evaluate in an event-based probabilistic loss model. Even a finite but large number of damage maps may not be practical, because many network performance measures are computationally expensive. Here we show a computationally-efficient method for selecting a subset of damage maps, corresponding ground-motion intensity maps, and associated occurrence rates that reasonably estimates the full distribution of the ground-motion intensity and a target performance measure using optimization. The method chooses a subset of maps and associated annual rates of occurrence that minimizes the error in estimating the distribution of a network performance measure as well as the marginal distributions of ground-motion intensity exceedance. The joint distribution of the ground-motion intensity is implicitly included in the objective function of the optimization problem via the network performance measure. We then show how to tune the optimization parameters based on consistency checks related to  the network performance measure and the ground motion hazard. We illustrate the proposed method with a case study of the San Francisco Bay Area road network to estimate the exceedance curve of the average percentage change in morning commute trip time. This work facilitates expanded and risk-consistent studies of the impacts of infrastructure networks on regional seismic risk and resiliency.
+\end{abstract}
+\keywords{Infrastructure; risk analysis; optimization}
+
+\maketitle
+
+%\tableofcontents
+
+%--------------------------------------------------------------------
+\section{Introduction}
+\vspace{-2pt}
+\label{sec:introOpt}
+\input{010intro}
+
+\section{Risk framework}
+\label{sec:framework}
+\input{020framework}
+
+\section{Selecting a subset of maps}
+\label{sec:selection}
+\input{030selection}
+
+\section{Case study}
+\vspace{-2pt}
+\label{sec:case}
+\input{040case}
+
+\section{Discussion}
+\vspace{-2pt}
+\label{sec:discussOpt}
+\input{050discuss}
+
+\section{Conclusions}
+\vspace{-2pt}
+\label{sec:conclusionsOpt}
+\input{060conclusions}
+
+
+\bibliographystyle{wileyj}	% (uses file "plain.bst")
+\bibliography{newfile} %subset_journal} %change via grep -v "url =" subset_journal.bib > newfile.bib %http://tex.stackexchange.com/questions/26318/disabling-urls-in-bibliography
+
+\end{document}

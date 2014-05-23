@@ -1,0 +1,305 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{chang_measuring_2001}
+Chang SE, Nojima N. Measuring post-disaster transportation system performance:
+  the 1995 {K}obe earthquake in comparative perspective. \emph{Transportation
+  Research Part A: Policy and Practice}  2001; \textbf{35}(6):475--494,
+  \doi{10.1016/S0965-8564(00)00003-3}.
+
+\bibitem{chang_evaluating_2003}
+Chang SE. Evaluating disaster mitigations: Methodology for urban infrastructure
+  systems. \emph{Natural Hazards Review}  2003; \textbf{4}(4):186--196,
+  \doi{10.1061/(ASCE)1527-6988(2003)4:4(186)}.
+
+\bibitem{rose_business_2002}
+Rose A, Lim D. Business interruption losses from natural hazards: conceptual
+  and methodological issues in the case of the {N}orthridge earthquake.
+  \emph{Global Environmental Change Part B: Environmental Hazards}  Mar 2002;
+  \textbf{4}(1):1--14, \doi{10.1016/S1464-2867(02)00012-8}.
+
+\bibitem{araneda_lessons_2010}
+Araneda J, Rudnick H, Mocarquer S, Miquel P. Lessons from the 2010 {C}hilean
+  earthquake and its impact on electricity supply. \emph{2010 International
+  Conference on Power System Technology ({POWERCON)}}, 2010; 1--7,
+  \doi{10.1109/POWERCON.2010.5666023}.
+
+\bibitem{romero_seismic_2010}
+Romero N, {O'Rourke} TD, Nozick LK. Seismic hazards and water supply
+  performance. \emph{Journal of Earthquake Engineering}  2010;
+  \textbf{14}(7):1022--1043, \doi{10.1080/13632460903527989}.
+
+\bibitem{rokneddin_bridge_2013}
+Rokneddin K, Ghosh J, Due{\~n}as-Osorio L, Padgett JE. Bridge retrofit
+  prioritisation for ageing transportation networks subject to seismic hazards.
+  \emph{Structure and Infrastructure Engineering: Maintenance, Management,
+  Life-Cycle Design and Performance}  2013;
+  :1–17\doi{10.1080/15732479.2011.654230}.
+
+\bibitem{bommer_development_2002}
+Bommer J, Spence R, Erdik M, Tabuchi S, Aydinoglu N, Booth E, del Re D,
+  Peterken O. Development of an earthquake loss model for {T}urkish catastrophe
+  insurance. \emph{Journal of Seismology}  Jul 2002; \textbf{6}(3):431--446,
+  \doi{10.1023/A:1020095711419}.
+
+\bibitem{grossi_catastrophe_2005}
+Grossi P, Kunreuther H. \emph{Catastrophe Modeling: A New Approach to Managing
+  Risk}. Springer, 2005.
+
+\bibitem{crowley_modelling_2006}
+Crowley H, Bommer J. Modelling seismic hazard in earthquake loss models with
+  spatially distributed exposure. \emph{Bulletin of Earthquake Engineering}
+  2006; \textbf{4}(3):249--273, \doi{10.1007/s10518-006-9009-y}.
+
+\bibitem{stergiou_treatment_2006}
+Stergiou E, Kiremidjian AS. Treatment of uncertainties in seismic risk analysis
+  of transportation systems. Engineer {T}hesis, Stanford University 2006.
+
+\bibitem{shiraki_system_2007}
+Shiraki N, Shinozuka M, Moore JE, Chang SE, Kameda H, Tanaka S. System risk
+  curves: Probabilistic performance scenarios for highway networks subject to
+  earthquake damage. \emph{Journal of Infrastructure Systems}  2007;
+  \textbf{13}(1):43–54, \doi{10.1061/(ASCE)1076-0342(2007)13:1(43)}.
+
+\bibitem{jayaram_efficient_2010}
+Jayaram N, Baker JW. Efficient sampling and data reduction techniques for
+  probabilistic seismic lifeline risk assessment. \emph{Earthquake Engineering
+  \& Structural Dynamics}  2010; \textbf{39}(10):1109–1131,
+  \doi{10.1002/eqe.988}.
+
+\bibitem{han_probabilistic_2012}
+Han Y, Davidson RA. Probabilistic seismic hazard analysis for spatially
+  distributed infrastructure. \emph{Earthquake Engineering \& Structural
+  Dynamics}  2012; \textbf{41}(15):2141--2158, \doi{10.1002/eqe.2179}.
+
+\bibitem{mckay_metric_2010}
+{McKay} S, Pruitt M, Harberg M, Covich A, Kenney M, Miller S, Fischenich J.
+  Metric development for environmental benefits analysis. \emph{Technical
+  {R}eport {ERDC} {TN-EMRRP-EBA-4}}, {U.S.} Army Engineer Research and
+  Development Center ({ERDC)} 2010.
+
+\bibitem{miller_framework_2014}
+Miller M, Baker JW. A framework for selecting a suite of ground-motion
+  intensity maps consistent with both ground-motion intensity and network
+  performance hazards for infrastructure networks. \emph{Safety, Reliability,
+  Risk and Life-Cycle Performance of Structures and Infrastructures}, Deodatis
+  G, Ellingwood BR, Frangopol DM (eds.). {CRC} Press, 2014; 4483--4491.
+
+\bibitem{johnson_planning_2005}
+Johnson L, Samant LD, Frew S. \emph{Planning for the Unexpected: Land-Use
+  Development And Risk}. American Planning Association, 2005.
+
+\bibitem{boore_ground-motion_2008}
+Boore DM, Atkinson GM. Ground-motion prediction equations for the average
+  horizontal component of {PGA}, {PGV}, and 5\%-damped {PSA} at spectral
+  periods between 0.01 s and 10.0 s. \emph{Earthquake Spectra}  2008;
+  \textbf{24}(1):99--138.
+
+\bibitem{abrahamson_summary_2008}
+Abrahamson N, Silva W. Summary of the {A}brahamson \& {S}ilva {NGA}
+  ground-motion relations. \emph{Earthquake Spectra}  2008;
+  \textbf{24}(1):67--97, \doi{10.1193/1.2924360}.
+
+\bibitem{chiou_nga_2008}
+Chiou BSJ, Youngs RR. An {NGA} model for the average horizontal component of
+  peak ground motion and response spectra. \emph{Earthquake Spectra}  2008;
+  \textbf{24}:173.
+
+\bibitem{campbell_nga_2008}
+Campbell KW, Bozorgnia Y. {NGA} ground motion model for the geometric mean
+  horizontal component of {PGA}, {PGV}, {PGD} and 5\% damped linear elastic
+  response spectra for periods ranging from 0.01 to 10s. \emph{Earthquake
+  Spectra}  2008; \textbf{24}(1):139--171, \doi{10.1193/1.2857546}.
+
+\bibitem{jayaram_correlation_2009}
+Jayaram N, Baker JW. Correlation model for spatially distributed ground-motion
+  intensities. \emph{Earthquake Engineering \& Structural Dynamics}  2009;
+  \textbf{38}(15):1687--1708, \doi{10.1002/eqe.922}.
+
+\bibitem{basoz_enhancement_1999}
+Bas{\"o}z N, Mander J. \emph{Enhancement of the Highway Transportation Lifeline
+  Module in {HAZUS}} 1999.
+
+\bibitem{ramanathan_analytical_2010}
+Ramanathan K, {DesRoches} R, Padgett J. Analytical fragility curves for
+  multispan continuous steel girder bridges in moderate seismic zones.
+  \emph{Transportation Research Record: Journal of the Transportation Research
+  Board}  2010; \textbf{2202}(-1):173--182, \doi{10.3141/2202-21}.
+
+\bibitem{lee_uncertainty_2007}
+Lee R, Kiremidjian AS. Uncertainty and correlation for loss assessment of
+  spatially distributed systems. \emph{Earthquake Spectra}  2007;
+  \textbf{23}(4):753--770, \doi{10.1193/1.2791001}.
+
+\bibitem{baker_introducing_2008}
+Baker JW. Introducing correlation among fragility functions for multiple
+  components. \emph{14th World Conference on Earthquake Engineering}, Beijing,
+  China, 2008; 8.
+
+\bibitem{werner_redars_2006}
+Werner S, Taylor C, Cho S, Lavoie J. \emph{{REDARS} 2 Methodology and Software
+  for Seismic Risk Analysis of Highway Systems (technical manual)}. Oakland,
+  {CA} 2006.
+
+\bibitem{basoz_bridge_1995}
+Bas{\"o}z N, Kiremidjian A. A bridge prioritization method based on
+  transportation system performance using {GIS.} \emph{Sixth US Japan Workshop
+  on Earthquake Disaster Prevention for Lifeline Systems}, Tsukuba Science
+  City, Japan, 1995; 437--449.
+
+\bibitem{lee_post-hazard_2011}
+Lee YJ, Song J, Gardoni P, Lim HW. Post-hazard flow capacity of bridge
+  transportation network considering structural deterioration of bridges.
+  \emph{Structure and Infrastructure Engineering}  2011;
+  \textbf{7}(7-8):509--521, \doi{10.1080/15732479.2010.493338}.
+
+\bibitem{handy_measuring_1997}
+Handy SL, Niemeier DA. Measuring accessibility: an exploration of issues and
+  alternatives. \emph{Environment and planning A}  1997;
+  \textbf{29}(7):1175–1194.
+
+\bibitem{duenas-osorio_seismic_2007}
+Due{\~n}as-Osorio L, Craig JI, Goodno BJ. Seismic response of critical
+  interdependent networks. \emph{Earthquake Engineering \& Structural Dynamics}
+   2007; \textbf{36}(2):285–306, \doi{10.1002/eqe.626}.
+
+\bibitem{adachi_serviceability_2008}
+Adachi T, Ellingwood BR. Serviceability of earthquake-damaged water systems:
+  Effects of electrical power availability and power backup systems on system
+  vulnerability. \emph{Reliability Engineering \& System Safety}  2008;
+  \textbf{93}(1):78--88, \doi{10.1016/j.ress.2006.10.014}.
+
+\bibitem{winkler_performance_2010}
+Winkler J, Due{\~n}as-Osorio L, Stein R, Subramanian D. Performance assessment
+  of topologically diverse power systems subjected to hurricane events.
+  \emph{Reliability Engineering \& System Safety}  Apr 2010;
+  \textbf{95}(4):323--336, \doi{10.1016/j.ress.2009.11.002}.
+
+\bibitem{shinozuka_seismic_2007}
+Shinozuka M, Dong X, Chen TC, Jin X. Seismic performance of electric
+  transmission network under component failures. \emph{Earthquake Engineering
+  \& Structural Dynamics}  2007; \textbf{36}(2):227–244,
+  \doi{10.1002/eqe.627}.
+
+\bibitem{hernandez-fajardo_sequential_2011}
+Hernandez-Fajardo I, Due{\~n}as-Osorio L. Sequential propagation of seismic
+  fragility across interdependent lifeline systems. \emph{Earthquake Spectra}
+  2011; \textbf{27}(1):23--43, \doi{10.1193/1.3544052}.
+
+\bibitem{goulter_analytical_1995}
+Goulter I. Analytical and simulation models for reliability analysis in water
+  distribution systems. \emph{Improving Efficiency and Reliability in Water
+  Distribution Systems}, Cabrera E, Vela AF (eds.). No.~14 in Water Science and
+  Technology Library, Springer Netherlands, 1995; 235--266.
+
+\bibitem{gearhart_optimization-based_2014}
+Gearhart J, Brown N, Jones D, Nozick L, Romero N, Xu N. Optimization-based
+  probabilistic consequence scenario construction for lifeline systems 2014.
+  Accepted for publication in Earthquake Spectra.
+
+\bibitem{boyd_l1-norm_2014}
+Boyd S. l1-norm methods for convex-cardinality problems 2014. {EE364b},
+  Stanford University Lecture Notes.
+
+\bibitem{lawler_branch-and-bound_1966}
+Lawler EL, Wood DE. Branch-and-bound methods: A survey. \emph{Operations
+  Research}  Aug 1966; \textbf{14}(4):699--719, \doi{10.1287/opre.14.4.699}.
+
+\bibitem{balakrishnan_branch_1991}
+Balakrishnan V, Boyd S, Balemi S. Branch and bound algorithm for computing the
+  minimum stability degree of parameter-dependent linear systems.
+  \emph{International Journal of Robust and Nonlinear Control}  Oct 1991;
+  \textbf{1}(4):295--317, \doi{10.1002/rnc.4590010404}.
+
+\bibitem{boyd_convex_2004}
+Boyd SP, Vandenberghe L. \emph{Convex Optimization}. Cambridge University
+  Press, 2004.
+
+\bibitem{udell_bounding_2014}
+Udell M, Boyd S. Bounding duality gap for problems with separable objective
+  2014. Online.
+
+\bibitem{udell_maximizing_2013}
+Udell M, Boyd S. Maximizing a sum of sigmoids 2013. Online.
+
+\bibitem{joshi_sensor_2009}
+Joshi S, Boyd S. Sensor selection via convex optimization. \emph{{IEEE}
+  Transactions on Signal Processing}  2009; \textbf{57}(2):451--462,
+  \doi{10.1109/TSP.2008.2007095}.
+
+\bibitem{carr_study_2007}
+Carr TL. A study of local governments participating in the pre-disaster
+  mitigation ({PDM)} program and populations served. \emph{Journal of Homeland
+  Security and Emergency Management}  2007; \textbf{4}(2).
+
+\bibitem{field_opensha:_2003}
+Field EH, Jordan TH, Cornell CA. {OpenSHA:} a developing community-modeling
+  environment for seismic hazard analysis. \emph{Seismological Research
+  Letters}  2003; \textbf{74}(4):406--419, \doi{10.1785/gssrl.74.4.406}.
+
+\bibitem{foulser-piggott_predictive_2012}
+Foulser-Piggott R, Stafford PJ. A predictive model for {A}rias intensity at
+  multiple sites and consideration of spatial correlations. \emph{Earthquake
+  Engineering \& Structural Dynamics}  2012; \textbf{41}(3):431–451,
+  \doi{10.1002/eqe.1137}.
+
+\bibitem{field_uniform_2009}
+Field EH, Dawson TE, Felzer KR, Frankel AD, Gupta V, Jordan TH, Parsons T,
+  Petersen MD, Stein RS, Weldon RJ, \emph{et~al.}. Uniform {C}alifornia
+  {E}arthquake {R}upture {F}orecast, {V}ersion 2 ({UCERF} 2). \emph{Bulletin of
+  the Seismological Society of America}  2009; \textbf{99}(4):2053--2107,
+  \doi{10.1785/0120080049}.
+
+\bibitem{wald_topographic_2007}
+Wald DJ, Allen TI. Topographic slope as a proxy for seismic site conditions and
+  amplification. \emph{Bulletin of the Seismological Society of America}  2007;
+  \textbf{97}(5):1379–1395, \doi{10.1785/0120060267}.
+
+\bibitem{chen_network_1991}
+Chen M, Alfa AS. A network design algorithm using a stochastic incremental
+  traffic assignment approach. \emph{Transportation Science}  1991;
+  \textbf{25}(3):215--224, \doi{10.1287/trsc.25.3.215}.
+
+\bibitem{wang_understanding_2012}
+Wang P, Hunter T, Bayen AM, Schechtner K, G{\'o}nzalez MC. Understanding road
+  usage patterns in urban areas. \emph{Scientific Reports}  2012;
+  \textbf{2}:1--6, \doi{10.1038/srep01001}.
+
+\bibitem{bureau_of_public_roads_traffic_1964}
+Bureau~of Public~Roads. Traffic assignment manual. \emph{Technical {R}eport},
+  {U.S.} Department of Commerce, Urban Planning Division, Washington {D.C.}
+  1964.
+
+\bibitem{hagberg_exploring_2008}
+Hagberg AA, Schult DA, Swart PJ. Exploring network structure, dynamics, and
+  function using {NetworkX}. \emph{Proceedings of the 7th Python in Science
+  Conference ({SciPy2008)}}, Pasadena, {CA} {USA}, 2008; 11–15.
+
+\bibitem{grant_cvx:_2012}
+Grant M, Boyd S. {CVX: Matlab software for disciplined convex programming,
+  version 2.0} 2012.
+
+\bibitem{grant_graph_2008}
+Grant M, Boyd S. Graph implementations for nonsmooth convex programs.
+  \emph{Recent Advances in Learning and Control}, Blondel V, Boyd S, Kimura H
+  (eds.). Lecture Notes in Control and Information Sciences, Springer-Verlag
+  Limited, 2008; 95--110.
+
+\bibitem{gurobi_optimization_gurobi_2013}
+Gurobi~Optimization I. Gurobi optimizer reference manual 2013.
+
+\bibitem{miller_seismic_2014}
+Miller M. Seismic risk assessment of complex transportation networks. {PhD}
+  thesis, Stanford University 2014.
+
+\bibitem{graves_broadband_2010}
+Graves RW, Pitarka A. Broadband ground-motion simulation using a hybrid
+  approach. \emph{Bulletin of the Seismological Society of America}  2010;
+  \textbf{100}({5A}):2095--2123, \doi{10.1785/0120100057}.
+
+\end{thebibliography}

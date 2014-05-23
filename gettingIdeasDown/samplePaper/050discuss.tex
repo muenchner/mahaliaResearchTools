@@ -1,0 +1,42 @@
+The case study demonstrates that an event-based approach to seismic risk analysis of a road network using optimization is feasible. In the following section, we discuss sensitivity to the choice of a target performance measure and the number of maps, as well as the role of numerically-calculated ground motions.
+%\begin{figure}[t!]
+%\centering
+%\includegraphics[width=10cm]{../FIGS/k.jpg}
+%\caption{Variation of error (MHCE, proxy MPMCE) with varying values of the number of maps in the final set of scenarios. TODO: replace.}
+%\label{fig:k}
+%\end{figure}
+
+\subsection{Sensitivity to the choice of target performance measure}
+We repeated the subset evaluation procedure with various other target performance measures to demonstrate that the performance of our method is not particularly sensitive to the choice of a target performance measure. Table \ref{table:others} shows the MPMCE(target) values for two alternative measures: (1) the estimated vehicle-miles traveled based on the previously-described demand data from the MTC and the ITA method and (2)  the weighted shortest path between locations of interest (here: points near the centroids of each of the 34 MTC superdistricts) according to the algorithm by \cite{chang_measuring_2001} where the edge weights for Dijkstra's shortest path algorithm are the free-flow travel times, which we also implement in Python using the NetworkX module. The results indicate that the results remain relatively robust with a change of target performance measure. 
+% (1) We compute the traffic flow capacity between two points of interest (San Francisco and Oakland) using the max-flow algorithm where the edge weights are the damaged or undamaged traffic flow capacity for each road link as implemented in Python in the Networkx module. 
+%As the table shows, the results were similar and in some cases better than the performance of the originally chosen target performance measure. 
+
+%rows are the w.m. columns are method 1 and method 2
+\begin{table}
+\centering
+\begin{tabular}{l*{1}{c}r}
+\hline
+\hline
+Performance measure             & MPMCE $(\%)$ \\
+\hline
+\textbf{Morning commute travel time}           & 2.7  \\
+Vehicle-miles traveled     & 1.8  \\
+Shortest paths     & 5.1  \\
+\hline
+\hline
+\end{tabular}
+\caption{Mean performance measure curve error (MPMCE) for various target performance measures. All results use the same subset of maps in the case study optimization result where the parameters are $(\alpha, R, \nu, J, k) = (0.56, 50, 12, 2110, 25)$.}
+\label{table:others}
+\end{table}
+
+\subsection{Extension to other target number of maps}
+We have shown results for $k=25$ maps in the case study to test the limits of our approach. A more common choice of $k$ in recent literature is around 200 maps  \cite{han_probabilistic_2012, jayaram_efficient_2010}. As expected, we see a reduction in the error when $k=200$.
+% (Figure~\ref{fig:k}). 
+The MHCE drops from 30.3\% to 14.9\%, the MPMCE(proxy) from 7.1\% to 4.9\%, and the MPMCE(target) from 2.7\% to 0.9\%. Visually we see a closer match of the subset and baseline loss exceedance curves when $k=200$, which corroborates these quantitative error metrics. These results suggest that it is beneficial to increase $k$ as much as is computationally feasible for the final application of the chosen subset. However, reasonable results can still be achieved with a relatively small number of maps.
+
+In addition, when $k=200$ maps,  the original optimization problem and the alternative with convex constraints select nearly identical subsets. Furthermore, the alternative finishes in a fraction of the time (hundredths of a second versus 300 seconds on a 2.8GHz desktop computer using the final parameters) and the result is guaranteed to be optimal with respect to the associated objective function and constraints.
+
+\subsection{Role of numerically-calculated ground motions}
+We have considered a simulated set of ground motions using empirical ground motion models. This framework could easily be adapted for a stochastic catalog of numerically simulated ground-motion intensities such as hybrid-broadband simulations~\cite[e.g.,][]{graves_broadband_2010}. By repeatedly simulating ground-motion intensities at each location over a large number of rupture scenarios, the above analysis could be repeated. While creating such a stochastic catalog is potentially computationally expensive, the results could serve as useful validation of a seismic risk assessment using the empirical ground motion models, or as an alternative to consider.
+
+

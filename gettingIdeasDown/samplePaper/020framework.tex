@@ -1,0 +1,77 @@
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{../FIGS/subsets_maps.eps} 
+\caption{Illustration of the risk framework for one earthquake scenario including: (a) One-second spectral acceleration  (ground-motion intensity) map with earthquake rupture, (b) bridge (component) damage map, (c) travel time increase (network performance measure) values. }
+\label{fig:sample_pipeline}
+\end{figure}
+
+We perform an infrastructure network risk assessment in an event-based framework from earthquake scenarios to the final calculation of the network performance in three stages (e.g., Figure~\ref{fig:sample_pipeline}). First, we start with a set of earthquake scenarios based on a seismic source model, and then we generate ground-motion intensity maps (e.g., Figure~\ref{fig:sample_pipeline}{\color{red}(a)}).  Next, we sample realizations of  damage maps (e.g., Figure~\ref{fig:sample_pipeline}{\color{red}(b)}) and corresponding levels of functionality for the corresponding parts of the network.  Finally, we compute the network performance (e.g., Figure~\ref{fig:sample_pipeline}{\color{red}(c)}). At each stage, multiple realizations are possible, which will be discussed below. For illustration in Figure~\ref{fig:sample_pipeline}, we have shown one realization per stage.
+
+%The analysis pipeline has 4 main steps: 1) We start with a set of ground motion scenarios based on a seismic source model. 2) We then generate ground-motion intensity maps and 3) draw realizations of damage maps. 4) Finally, we compute the network performance. 
+
+This general risk analysis framework is common in academic literature and in practice~\cite{grossi_catastrophe_2005,johnson_planning_2005,jayaram_efficient_2010, han_probabilistic_2012,bommer_development_2002}. However, the last step, network performance, has varying treatment. For insurance applications, the loss calculated in the last step is simply the insured loss. This paper extends the prior work by detailing how to use optimization as part of a full risk framework to select a subset of maps for computing a target network performance measure and corresponding annual rates of occurrence.  These values enable a risk assessment of network performance losses.
+% for a proxy measure. Through optimization, we are able to select a subset of ground motion maps and corresponding damage maps for which we do our final step, risk analysis using the target performance measure
+
+% The diagram also shows how we will compare results of an optimized subset of intensity maps and an extensively-sampled baseline set of intensity maps. For purposes of illustration, we will consider seismic hazard and for the intensity measure will use the spectral acceleration at a period of $T=1s$, which is denoted by $\ln Sa(T=1s)$ or simply $\ln Sa$. 
+
+\subsection{Ground-motion intensity maps}
+We now describe how to produce a set of maps with ground-motion intensity realizations at each location of interest in a region and corresponding occurrence rates that reasonably capture the joint distribution of the ground-motion intensity. First, we generate $Q$ earthquake scenarios from a seismic source model. The seismic source model specifies the rates that earthquakes of specified magnitudes, locations, and faulting types will occur. This set of earthquake scenarios is comparable to a stochastic event catalogue in the insurance industry.
+
+Second, for each earthquake scenario in the seismic source model, we use an empirical ground motion prediction equation (GMPE) to model the resulting intensity at each location of interest \cite[e.g.,][]{boore_ground-motion_2008,abrahamson_summary_2008,chiou_nga_2008,campbell_nga_2008}. The GMPE predicts the mean of the log ground-motion intensity, $\overline{\ln Y (M_q, R_{iq}, V_{s30,i}, \ldots) }$ and ground-motion intensity within- and between-event residual standard deviations, which are denoted by $\sigma_{iq}$ and $\tau_q$ respectively, for the $i^{th}$ site where $i = 1, \ldots, n$ in the $q^{th}$ earthquake scenario where $q=1, \ldots, Q$, $M_q$ is the moment magnitude of the $q^{th}$ scenario, $R_{iq}$ is the closest horizontal distance from the surface projection of the fault plane to location $i$, and $V_{s30,i}$ is the average shear wave velocity down to 30$m$ at the $i^{th}$ location. 
+
+Then, for each of the $Q$ earthquake scenarios, we sample $b$ realizations of the spatially-correlated ground-motion intensity residual terms. Readers are referred to \cite{han_probabilistic_2012} for a survey of sampling methods.  Once residuals are sampled, the total log ground-motion intensity ($Y$) is computed as 
+
+\begin{equation}
+\ln Y_{ij} = \overline{\ln Y (M_j, R_{ij}, V_{s30,i}, \ldots) }+ \sigma_{ij} \epsilon_{ij} + \tau_j \eta_j
+\label{eq:GMPE}
+\end{equation}
+where $j$ is the ground-motion intensity map index ($j = 1, \ldots, m$ where $m = Q \times b$), $\epsilon_{ij}$ is the normalized within-event residual in $\ln Y$ representing location-to-location variability and $\eta_j$ is the normalized between-event residual in $\ln Y$ and the other parameters are defined above. Both $\epsilon_{ij}$ and $\eta_j$ are normal random variables with zero mean and unit standard deviation. The vector of $\epsilon_{ij}$ can be modeled by a spatially-correlated multivariate normal distribution~\cite[e.g.,][]{jayaram_correlation_2009} %Boore et al. 2003; Wang and Takada 2005; Goda and Hong 2008; Jayaram and Baker 2009 
+and the $\eta_j$ by a standard univariate normal distribution. 
+
+The result is a set of $m$ ground-motion intensity maps (e.g., Figure~\ref{fig:sample_pipeline}{\color{red}(a)}). Since we simulate an equal number ($b$) of ground-motion intensity maps per earthquake scenario, the annual rate of occurrence for the $j^{th}$ ground-motion intensity map is the original rate of occurrence of the earthquake scenario, divided by $b$. We denote the final result as $w_j$.  
+
+%The total log ground-motion intensity ($Y$) at the $i^{th}$ site for the $j^{th}$ ground-motion intensity map is the linear combination of the mean log ground-motion intensity and the residual terms, precisely
+%\begin{equation}
+%\ln Y_{ij} = \overline{\ln Y (M_j, R_{ij}, V_{s30,i}, T, \ldots) }+ \sigma_{ij} \epsilon_{ij} + \tau_j \eta_j
+%\label{eq:GMPE}
+%\end{equation}
+%where $\epsilon_{ij}$ is the within-event residual in $\ln Y$ representing location-to-location variability and $\eta_j$ is the between-event residual in $\ln Y$ and the other parameters are defined above. The $\epsilon_{ij}$ can be modeled by a spatially-correlated multivariate normal distribution~\cite{jayaram_correlation_2009} %Boore et al. 2003; Wang and Takada 2005; Goda and Hong 2008; Jayaram and Baker 2009 
+%and the $\eta_j$ by a standard normal distribution. 
+%
+%Our framework uses empirical ground motion prediction equations to generate realizations of ground-motion intensity. But, numerically simulated ground motions~\cite{graves_broadband_2010} could be used instead provided that the simulations provide intensity measure realizations at each site of interest and each simulation has an associated annual rate of occurrence.
+%%Note that the resulting ground motion intensity maps show correlation from two sources, from correlation in the mean log spectral acceleration and correlation in the residual terms as discussed in \cite{baker_effects_2011}.
+
+\subsection{Damage maps}
+Calculating network performance risk requires assessing the structural response of relevant structures in the network to future earthquakes. The link between ground-motion intensity and structural response is often provided by fragility functions. Fragility functions express, for example, $P(DS_i \geq ds_s | Y_{ij} = y)$. We assume one component, such as a bridge, per site location, so we will identify both components and site locations via the index $i$. Using that notation, $DS_i$ is a discrete random variable whose value represents the damage state for the $i^{th}$ component and $ds_s$ is a damage state threshold of interest. The damage state is conditioned on a realization, $y$, of the random variable $Y_{ij}$, the ground-motion intensity at the $i^{th}$ site and $j^{th}$ ground-motion intensity map. Researchers have calibrated fragility functions using historical post-earthquake data~\cite[e.g.,][]{basoz_enhancement_1999}, experimental and analytical results~\cite[e.g.,][]{ramanathan_analytical_2010}, hybrid approaches, and expert opinion. Note that like the ground motion intensities, the damage states can be sampled from a joint distribution that includes correlation, such as due to similarities in design or construction practices~\cite[e.g.,][]{lee_uncertainty_2007,baker_introducing_2008}. 
+
+By sampling a damage state for each component, with probabilities obtained from the fragility functions given the ground-motion intensity, we produce a damage map (e.g., Figure~\ref{fig:sample_pipeline}{\color{red}(b)}). The damage map has a realization of the damage state of each relevant component. This sampling process can be repeated multiple times to simulate multiple damage maps per ground-motion intensity map. For example, if equal numbers of damage maps are sampled per ground-motion intensity map ($c$ damage maps per ground-motion intensity map), the weight of the $j'^{th}$ damage map should be adjusted accordingly to $w_{j'}$, where $w_{j'} = \frac{w_j}{c}$, and $j' = 1, \ldots, J$. 
+
+%These damage maps are directly mapped to the functionality of elements of the network. 
+\emph{Functional percentage} relationships link the component damage to the functionality of network elements.  For example, in a road network, when a bridge collapses, the traffic flow capacity of the road it carries and it crosses can be modeled as reduced to zero. These relationships are often derived from a combination of observation and expert opinion, often due to data scarcity~\cite{werner_redars_2006}. Furthermore, the relationships are typically deterministic for a certain component damage state and restoration time~\cite{werner_redars_2006}. Thus, in this paper, each damage map corresponds to a functionality state for every element of the network.
+%each damage map is directly mapped to the functionality of different elements of the network.
+%each structure-component damage map corresponds to one network-component damage maps in this paper. Because the structure-component damage maps 
+%
+%we have defined the network-component damage maps structure-component damage maps co network-component damage maps , we will hereafter refer to structure-component damage maps as \
+
+%For each intensity map, we generate \emph{component damage maps} with a discrete damage state at each location of interest sampled using appropriate fragility functions that provide a relationship between the $\ln Sa$ and damage states (Step 3 of Fig.~\ref{fig:pipeline}). 
+
+\subsection{Network performance measures and risk analysis} \label{sec:net}
+The final step for the event-based risk analysis is to evaluate the network performance measure, $X$. We will consider various network performance measures, each of which is a scalar quantity per damage map.  
+%something about transportation
+For road networks, two common performance measures are connectivity~\cite{basoz_bridge_1995,rokneddin_bridge_2013} and flow capacity~\cite{lee_post-hazard_2011}.  In order of increasing general computational cost, other measures to capture road network performance include the percentage of bridges damaged, weighted-shortest path between locations of interest \cite{chang_measuring_2001}, fixed-demand travel-time~\cite{stergiou_treatment_2006,shiraki_system_2007,jayaram_efficient_2010,han_probabilistic_2012}, morning or evening peak commute time, economic impacts from increased travel time and bridge repairs \cite{stergiou_treatment_2006}, and mode-destination accessibility~\cite{handy_measuring_1997}.  Fixed-demand travel time delay and its variants have become particularly popular in current literature (e.g., Figure~\ref{fig:sample_pipeline}{\color{red}(c)}).
+%something about power
+For power networks, connectivity is also a common network performance measure~\cite{duenas-osorio_seismic_2007}. Recently, power network researchers have introduced other measures such as serviceability ratio~\cite{adachi_serviceability_2008}, power system flow \cite{winkler_performance_2010}, and recovery time of the electrical network~\cite{shinozuka_seismic_2007}.
+%something about water
+Researchers have also used connectivity to measure the reliability of water networks with alternative measures including flow capacity, entropy-based measures, nodal demands, and the total number of component failures system-wide~\cite{romero_seismic_2010,hernandez-fajardo_sequential_2011,goulter_analytical_1995}.
+
+Once the chosen performance measure is computed for each damage map, understanding the exceedance rate of different levels of performance is a common goal. The annual rate, $\lambda$, of exceeding some threshold of network performance is estimated by summing the occurrence rates of all damage maps in which the performance measure exceeds the threshold: 
+\begin{equation}
+\lambda_{X \geq x} = \sum_{j'=1}^{J} w_{j'} \mathbbm{I}(x_{j'}\geq x)
+\label{eq:exceedance}
+\end{equation}
+where $x$ is a network performance measure threshold of interest and $x_{j'}$ is the network performance realization for the $j'^{th}$ damage map. The variable $w_{j'}$ is the occurrence rate of the $j'^{th}$ damage map as introduced above.
+% ($w_j = \frac{w_j}{c}$ where $c$ is the number of damage map realizations per ground-motion intensity map). 
+The indicator function $\mathbbm{I}$  evaluates to 1 if the argument, $x_{j'} \geq x$, is true, and 0 otherwise. By evaluating $\lambda$ at different threshold values, we derive an exceedance curve (e.g., Figure~\ref{fig:yirs}{\color{red}(b)}). In the results below, we will evaluate exceedance curves not only for the performance measure ($X$), but also for the ground-motion intensity measure ($Y$) (e.g., Figure~\ref{fig:yirs}{\color{red}(a)}). 
+
