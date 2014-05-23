@@ -1,11 +1,12 @@
+% This is code by Jack Baker, Lynne Burks and Mahalia Miller
 function print_figure(filename)
 % function print_figure(filename)
 % prints figure to eps filetype
 % don't include *.eps extension in filename!
 % 
-% Lynne Burks
+% based on code by Lynne Burks
 % Stanford University
-% September 18, 2013
+
 
 set(gcf, 'paperpositionmode', 'auto');
 % print('-depsc', [filename '.eps'], '-loose');
