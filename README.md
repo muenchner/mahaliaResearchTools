@@ -1,7 +1,7 @@
 mahaliaResearchTools
 ============
 
-This repository offers code and tools to enable you to become a more efficient researcher. The five main categories are getting your ideas down, finding references, synchronizing your data, making pretty pictures, and researching natural disasters with finesse.
+This repository offers code and tools to enable you to become a more efficient researcher. The five main categories are:  finding references, getting your ideas down, making pretty pictures, researching natural disasters with finesse, and synchronizing your data.
 
 This work has been done primarily by me in the Baker Research Group at Stanford University, USA. Here is our group website: http://stanford.edu/~bakerjw/
 
