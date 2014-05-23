@@ -12,4 +12,4 @@ Here is a great little video showing you how to get data into Zotero: https://ww
 
 Here are some screenshots explaining how to get stuff from Google Scholar specifically: https://www.zotero.org/support/screencast_tutorials/zotero_and_google_tools
 
-Note: there are other alternatives to Zotero. You can consult the web for other choices.
+Note: there are other alternatives to Zotero. One good option is Papers for Mac. You may also consider Endnote. You can consult the web for other choices. 
