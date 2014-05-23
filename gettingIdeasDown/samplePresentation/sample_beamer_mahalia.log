@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 MAY 2014 10:57
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 MAY 2014 12:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1085,16 +1085,16 @@ Overfull \hbox (117.59772pt too wide) in paragraph at lines 81--81
 [1
 
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<zoomedToSF_no101.png, id=46, 677.8926pt x 396.5214pt>
-File: zoomedToSF_no101.png Graphic file (type png)
+<../FIGS/zoomedToSF_no101.png, id=46, 677.8926pt x 396.5214pt>
+File: ../FIGS/zoomedToSF_no101.png Graphic file (type png)
 
-<use zoomedToSF_no101.png>
+<use ../FIGS/zoomedToSF_no101.png>
 Overfull \vbox (13.49953pt too high) detected at line 98
  []
 
 [2
 
- <./zoomedToSF_no101.png>]
+ <../FIGS/zoomedToSF_no101.png>]
 LaTeX Font Info:    Try loading font information for U+msa on input line 126.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1138,23 +1138,20 @@ Package rerunfilecheck Info: File `sample_beamer_mahalia.out' has not changed.
 (rerunfilecheck)             Checksum: 6DE875DAA82B8FF6AD4F10B23B98CA2F;66.
  ) 
 Here is how much of TeX's memory you used:
- 17712 strings out of 493747
- 339926 string characters out of 3143546
+ 17710 strings out of 493747
+ 339939 string characters out of 3143546
  439327 words of memory out of 3000000
- 20468 multiletter control sequences out of 15000+200000
+ 20466 multiletter control sequences out of 15000+200000
  29492 words of font info for 46 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  48i,14n,56p,329b,537s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Navigation7} has been referenced but does not exi
-st, replaced by a fixed one
-
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local
-/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on sample_beamer_mahalia.pdf (6 pages, 2158087 bytes).
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loc
+al/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on sample_beamer_mahalia.pdf (6 pages, 2158053 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 14 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
