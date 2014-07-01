@@ -18,6 +18,7 @@ subset_selection_main_alternative.m   	-- the main script to run the demonstrati
 fn_calculate_error.m  		-- a function that calculates the post-optimization error metrics defined in the above paper, MHCE and MPMCE
 fn_loss_exceedance.m		-- a function that computes a loss exceedance curve, which is an intermediate step in the MHCE and MPMCE calculations 
 fn_populate_matrices.m 		-- a function for pre-processing in both subset_selection_main.m and subset_selection_main_alternative.m
+README_map_selection.txt	-- description of file contents and how to use the code
 map_selection_example.mat -- a Matlab workspace containing sample input data that is used in the subset selection files above. There are three matrices in the workspace:
 	%IM_full = ground-motion intensity at sample sites (n=3 for illustration, which correspond to Sa(T=1s) at sites 778, 61 and 856 of the paper dataset). Each row is a different ground-motion intensity map (m=2110,c=1 for illustration) and each column corresponds to a different site. 
 

@@ -43,7 +43,7 @@ function [ THETA_I, PSI ] = fn_populate_matrices(site, IM_full, IM, PM_proxy_ful
 	    end
 	end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%no do performance matrix piece (called PSI in Section 3 of Miller and Baker paper)
+%now do performance matrix piece (called PSI in Section 3 of Miller and Baker paper, the R x J matrix in equation 3(a))
 	if do_pm_boolean == 1
 		%now, again, the first thing to do is to determine what the Y_r values are, in other words what the "true" performance metric values should be at a given return period
 		[x_pm_full,y_pm_full] = fn_loss_exceedance(PM_proxy_full, w_0_full); %FULL

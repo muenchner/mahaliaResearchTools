@@ -42,7 +42,12 @@ IM = IM(w_0>thresh, :);
 PM_proxy = PM_proxy(w_0>thresh, :);
 w_0 = w_0(w_0>thresh,:);
 
-testing_return_periods = [100.0, 107.0, 114.0, 122.0, 130.0, 139.0, 148.0, 158.0, 169.0, 181.0, 193.0, 206.0, 220.0, 235.0, 251.0, 268.0, 286.0, 305.0, 326.0, 348.0, 372.0, 397.0, 424.0, 453.0, 484.0, 517.0, 552.0, 589.0, 629.0, 672.0, 718.0, 766.0, 818.0, 874.0, 933.0, 997.0, 1064.0, 1137.0, 1214.0, 1296.0, 1384.0, 1478.0, 1579.0, 1686.0, 1800.0, 1922.0, 2053.0, 2192.0, 2341.0, 2500.0]; %50 return periods equally spaced in base 10 log space between 100 and 2500 years. (Can be changed if need be, but should not be necessary)
+%define the return periods where you would like the loss exceedance curves
+%to match.
+min_return_period = 100; %years
+max_return_period = 2500; %years
+num_return_periods = 50; %number
+testIng_return_periods = logspace(log10(min_return_period), log10(max_return_period), num_return_periods);  %50 return periods equally spaced in base 10 log space between 100 and 2500 years. (Can be changed if need be, but should not be necessary)
 optimization_return_periods = testing_return_periods; %define the return periods at which the optimization will try to match the intensity measure exceedance curve (could be less than the total) to promote convergence. This can be changed!
 
 k = 25; %target number of pairs of damage maps and ground-motion intensity values in final output. This can be changed!
